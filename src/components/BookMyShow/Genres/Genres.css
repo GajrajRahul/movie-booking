@@ -75,7 +75,7 @@ h2 {
 
 @media only screen and (min-width:820px) and (max-width:1024px) {
     .content {
-        position: sticky;
+        position: static;
         top: 2%;
         height: auto;
         width: 90%;
