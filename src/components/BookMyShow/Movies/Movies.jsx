@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../Movies/Movie.css";
 import { Overlay } from "../../OverLay/Overlay";
 import { MovieCard } from "./MovieCard";
@@ -7,7 +7,6 @@ import { MovieDetials } from "./MovieDetials";
 export function Movies(props) {
   const [detailsData, setDetailsData] = useState(null);
   const [overlayFlag, setOverlayFlag] = useState(false);
-  // const genreDataString = localStorage.getItem("genres");
   const genreData = JSON.parse(localStorage.getItem("genres"));
 
 
@@ -19,7 +18,6 @@ export function Movies(props) {
     });
     setOverlayFlag(true);
     setDetailsData({ data: showData, detils: ids });
-    // props.flagStatus(ids);
   };
 
   const setFunction = () => {

@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { apiUrl } from "../../importent/api";
 import { FaStar } from "react-icons/fa";
 import apicalls from "../../utills/apicalls";
@@ -29,7 +29,6 @@ export function MovieDetials(props) {
   }
 
   const addToWishList = () => {
-    // wishList = JSON.(localStorage.getItem('wishlist'));
     
     if (
       wishList.some(
@@ -37,7 +36,6 @@ export function MovieDetials(props) {
           info.detils.id === props.movieDetils.detils.id
       )
     ) {
-      // setInfoExist(true);
       return;
     } else {
       wishList.push(props.movieDetils);

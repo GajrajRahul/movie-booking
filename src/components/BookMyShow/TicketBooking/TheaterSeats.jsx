@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./TicketBooking.css";
 import { UserContex } from "../../Home";
-import { NavLink, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Overlay } from "../../OverLay/Overlay";
 
 export function TheaterSeats(props) {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Payment } from "./Payment";
 import { Summary } from "./Summary";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function CheckOut() {
   const ticketDetails = JSON.parse(sessionStorage.getItem("BookingDetails"));
